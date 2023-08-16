@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+html {
+    font-family: "Lexend", Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5B7B1;
+    overflow: hidden;
+}
+
+.content::-webkit-scrollbar {
+    width: 25px;
+    background: transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+.content:hover::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 0 10px #3498DB;
+}
+
+.content:hover::-webkit-scrollbar-thumb:hover {
+    border: 8px solid transparent;
+}
+
+.content::-webkit-scrollbar-track {
+    margin: 20px 0;
+    background-color: transparent;
+}
+
+
+.content {
+    width: 60%;
+    height: 80%;
+    padding: 25px;
+    background-color: #f3f3f3;
+    border: 2px solid #AED6F1;
+    border-radius: 20px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #AED6F1;
+}
+
+.header__img {
+    width: 200px;
+    border-radius: 200px;
+    border: 2px solid #333;
+}
+
+.personal-info__list {
+    list-style-type: square;
+}
+
+.personal-info,
+.description,
+.abilities,
+.social-media {
+    margin-top: 50px;
+}
+
+.personal-info__title,
+.description__title,
+.abilities__title,
+.social-media__title {
+    text-align: center;
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+.social-media__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.social-media__link {
+    text-decoration: none;
+    color: #E74C3C;
+}
+
+.description__text {
+    text-align: justify;
+}
